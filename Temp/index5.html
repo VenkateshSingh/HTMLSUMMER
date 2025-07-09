@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="list">
+        <li>Item 1</li>
+    </ol>
+    <button onclick="addItem() ">Add Item</button>
+    <button id ="magic" onclick="removeMe() ">Magic</button>
+    <button id="mybtn">Click Me</button>
+    <script>
+        const btn = document.getElementById("mybtn");
+        btn.addEventListener('click',() =>{
+            alert('Button Clicked!');
+        });
+        function removeMe(){
+            const magic=document.getElementById("magic");
+            magic.remove();
+
+        }
+
+        function addItem(){
+            const newItem = document.createElement('li')
+            newItem.textContent="Item";
+
+            const list = document.getElementById('list');
+            list.appendChild(newItem);
+        }
+    </script>
+</body>
+</html>

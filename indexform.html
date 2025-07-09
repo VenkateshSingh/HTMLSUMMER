@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="/login" method="get" target="_blank">
+        <fieldset>
+            <legend>Basic Details</legend>
+        <input type="username" placeholder="username" id="username" value="john@123">
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <input type="number" name="age" id="age" min="18" max="100" step="2">
+        <input type="password" name="password" id="password" placeholder="password">
+        <input type="checkbox" id="t&c" name="t&c" value="yes" checked>
+        <input type="file" name="resume" id="resume" accept=".pdf,.png" multiple>
+        <select name="country" id="country">
+            <optgroup>
+                <option value="in">India</option>
+                <option value="chi">China</option>
+            </optgroup>
+            <option value="us">USA</option>
+            <option value="ca">Canada</option>
+            <option value="sa">RSA</option>
+            <optgroup>
+                <input list="browsers" id="browser" name="browser" placeholder="Type or choose..." />
+            <datalist id="browsers">
+                <option value="Google Chrome">
+                <option value="Mozilla Firefox">
+                <option value="Safari">
+                <option value="Microsoft Edge">
+                <option value="Opera">
+                <option value="Brave">
+                <option value="Vivaldi">
+            </datalist>
+
+            </optgroup>
+        </select>
+        <br>
+        <div class="progress-container">
+            <label for="progressBar">Uploading File...</label>
+            <progress id="progressBar" value="15" max="100"></progress>
+            <div class="value-box"><span id="progressValue">0</span>%</div>
+        </div>
+
+        <input type="submit" value="Login">
+        </fieldset>
+    </form>
+</body>
+</html>

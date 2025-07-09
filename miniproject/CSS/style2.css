@@ -1,0 +1,23 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+ }
+
+
+.navbar{
+    height: 100vh;
+    width: 15%;
+    padding: 75px;
+    flex-direction: column;
+    display: flex;
+    background-color:blanchedalmond;
+    align-items:start;
+    gap: 10px;
+    justify-content:start;
+
+}
+.navbar-item{
+    color: rgb(72, 0, 255);
+    list-style: none;
+}
